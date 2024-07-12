@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond.">
+  <meta name="keywords" content="OoD detection, Benchmark, Diffusion, Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.gif">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond</h1>
+          
+          <div class="title is-3">
+            <strong>ECCV 2024</strong>
+            </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://lmb.informatik.uni-freiburg.de/people/galessos">Silvio Galesso</a>,</span>
+              <span class="author-block">
+                <a href="https://pschroeppel.github.io">Philipp Schröppel</a>,</span>
+              <span class="author-block">
+                Hssan Driss,</span>
+            <span class="author-block">
+              <a href="https://lmb.informatik.uni-freiburg.de/people/brox/">Thomas Brox</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Freiburg</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Schroppel_Neural_Point_Cloud_Diffusion_for_Disentangled_3D_Shape_and_Appearance_CVPR_2024_paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.14124"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=_zumjq9mzHw"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://lmb.informatik.uni-freiburg.de/link-to-data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/lmb-freiburg/ade-ood"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://lmb.informatik.uni-freiburg.de/Publications/2024/SB24/poster-neural_point_cloud_diffusion.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper video. -->
+<!-- <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="publication-video">
+      <iframe src="https://www.youtube.com/embed/_zumjq9mzHw?rel=0&amp;showinfo=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> -->
+<!--/ Paper video. -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, research on out-of-distribution (OoD) detection for semantic segmentation 
+            has mainly focused on road scenes - a domain with a constrained amount of semantic diversity.
+          </p>
+          <p>
+            In this work, we challenge this constraint and extend the domain of this task to general natural images. 
+            To this end, we introduce 1. the ADE-OoD benchmark, which is based on the ADE20k dataset
+            and includes images from diverse domains with a high semantic diversity, and
+            2. a novel approach that uses Diffusion score matching for OoD detection (DOoD) and is robust 
+            to the increased semantic diversity.
+          </p>
+          <p>
+            ADE-OoD features indoor and outdoor images and defines 150 semantic categories as in-distribution. 
+            For DOoD, we train a diffusion model with an MLP architecture on semantic in-distribution 
+            embeddings and build on the score matching interpretation to compute pixel-wise OoD scores at inference time. 
+          </p>
+          On common road scene OoD benchmarks, DOoD performs on par or better than the state of the art, without 
+          using outliers for training or making assumptions about the data domain. 
+          On ADE-OoD, DOoD outperforms previous approaches, but leaves much room for future improvements.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- coming soon. -->
+    <!-- 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Project page coming soon!</h2>
+      </div>
+    </div>
+     -->
+    <!--/ coming soon. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">BibTeX</h2>
+      </div>
+    </div>
+    <pre><code>@inproceedings{GalessoECCV2024,
+  Title = {Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond},
+  Author = {Silvio Galesso and Philipp Schr\"oppel and Hssan Driss and Thomas Brox},
+  Booktitle = {ECCV},
+  Year = {2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Acknowledgements. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            The research leading to these results was funded by the Deutsche
+            Forschungsgemeinschaft (DFG, German Research Foundation) under the
+            project numbers 401269959 and 417962828,
+             and by the German Federal Ministry for Economic Affairs and Climate Action within the 
+             project “NXT GEN AI METHODS - Generative Methoden für Perzeption, Prädiktion und Planung". 
+             The authors would like to thank the consortium for the successful cooperation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgements. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://openaccess.thecvf.com/content/CVPR2024/papers/Schroppel_Neural_Point_Cloud_Diffusion_for_Disentangled_3D_Shape_and_Appearance_CVPR_2024_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/lmb-freiburg/diffusion-for-ood" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template for this website comes from <a
+              href="https://nerfies.github.io">Nerfies</a>. Thanks for open-sourcing!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
