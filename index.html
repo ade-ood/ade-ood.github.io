@@ -34,9 +34,11 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond</h1>
+          <!-- <h1 class="title is-1 publication-title">Diffusion for Out-of-Distribution Detection on Road Scenes and Beyond</h1> -->
+          <h1 class="title is-1 publication-title">ADE-OoD: a Benchmark for Out-of-Distribution Detection Beyond Road Scenes</h1>
+
           
-          <div class="title is-3">
+          <!-- <div class="title is-3">
             <strong>ECCV 2024</strong>
             </div>
 
@@ -54,7 +56,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">University of Freiburg</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -144,24 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In recent years, research on out-of-distribution (OoD) detection for semantic segmentation 
-            has mainly focused on road scenes - a domain with a constrained amount of semantic diversity.
-          </p>
-          <p>
-            In this work, we challenge this constraint and extend the domain of this task to general natural images. 
-            To this end, we introduce 1. the ADE-OoD benchmark, which is based on the ADE20k dataset
-            and includes images from diverse domains with a high semantic diversity, and
-            2. a novel approach that uses Diffusion score matching for OoD detection (DOoD) and is robust 
-            to the increased semantic diversity.
-          </p>
-          <p>
-            ADE-OoD features indoor and outdoor images and defines 150 semantic categories as in-distribution. 
-            For DOoD, we train a diffusion model with an MLP architecture on semantic in-distribution 
-            embeddings and build on the score matching interpretation to compute pixel-wise OoD scores at inference time. 
-          </p>
-          On common road scene OoD benchmarks, DOoD performs on par or better than the state of the art, without 
-          using outliers for training or making assumptions about the data domain. 
-          On ADE-OoD, DOoD outperforms previous approaches, but leaves much room for future improvements.
+            ADE-OoD is a benchmark for dense Out-of-Distribution detection on general natural images. The goal of the benchmark is to extend the domain in-distribution and out-of-distribution beyond the common road scenes paradigm. To this end, the in-distribution ontology considered by ADE-OoD are the 150 categories ofthe ADE20k dataset for segmentic segmentation. 
         </p>
         </div>
       </div>
@@ -187,6 +172,9 @@
 
 
 <section class="section" id="BibTeX">
+  <p>
+    If you use this benchmark in your research, please cite the following paper:
+  </p>
   <div class="container is-max-desktop content">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
