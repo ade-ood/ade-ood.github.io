@@ -29,6 +29,15 @@ body {
 
 
 .publication-title {
+  text-shadow: 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white, 
+  0px 0px 30px white;
 }
 
 .publication-banner {
@@ -154,4 +163,13 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.header-image { 
+  background-image: url("/static/images/collage.jpg"); 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-blend-mode: soft-light ;
+  background-color: #686868; 
 }
